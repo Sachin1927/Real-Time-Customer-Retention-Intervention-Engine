@@ -1,0 +1,41 @@
+# --- Data Engineering & Processing ---
+pandas>=2.1.0
+numpy>=1.26.0
+pyarrow>=14.0.0             # Required for Parquet files (Feast/Pandas)
+sqlalchemy>=2.0.0           # Database ORM
+python-dotenv>=1.0.0        # Loading environment variables
+joblib>=1.3.0               # Saving/Loading Models
+
+# --- Visualization ---
+matplotlib>=3.8.0
+seaborn>=0.13.2
+
+# --- Feature Store ---
+feast>=0.35.0               # Managing features for training vs serving
+
+# --- Modeling (The "Brain") ---
+scikit-learn>=1.3.0
+xgboost>=2.0.0              # High-performance gradient boosting
+lightgbm>=4.1.0             # Alternative to XGBoost (Optional but good to have)
+transformers>=4.35.0        # NLP for Sentiment Analysis
+torch>=2.1.0                # Backend for Transformers
+
+# --- MLOps & Tracking ---
+mlflow>=2.8.0               # Experiment tracking (Optional future use)
+evidently>=0.4.0            # Drift detection (Optional future use)
+
+# --- Explainability (XAI) ---
+shap>=0.43.0                # Explaining 'Why' (Crucial for interviews)
+
+# --- Serving (The API) ---
+fastapi>=0.104.0            # The web framework
+uvicorn[standard]>=0.24.0   # The server
+pydantic>=2.5.0             # Data validation
+requests>=2.31.0            # Sending API requests
+
+# --- Frontend (Dashboard) ---
+streamlit>=1.28.0           # The UI we just built
+
+# --- Testing & Quality Assurance ---
+pytest>=7.4.0               # Unit Testing
+httpx>=0.25.0               # API Testing Client

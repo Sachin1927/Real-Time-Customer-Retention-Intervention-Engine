@@ -1,0 +1,23 @@
+app:
+  title: "Sentinel Churn Predictor"
+  version: "v1.0"
+  min_churn_probability: 0.5
+
+data:
+  raw_path: "data/raw/telco_churn_simulated.parquet"
+  feature_store_path: "data/feature_store"
+
+model:
+  path: "models/production/xgb_churn_v1.joblib"
+  target: "churn"
+  features:
+    - age
+    - tenure_months
+    - monthly_charges
+    - avg_daily_usage_min
+    - payment_fails_last_3m
+    - last_interaction_sentiment
+
+training:
+  test_size: 0.2
+  random_state: 42
