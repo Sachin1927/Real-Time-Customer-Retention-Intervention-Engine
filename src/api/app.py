@@ -53,7 +53,8 @@ app = FastAPI(title="Sentinel Churn Predictor", version="1.2")
 # --- HEALTH CHECK ENDPOINT (The fix for your test) ---
 @app.get("/")
 def health_check():
-    return {"status": "online", "message": "Sentinel API is running"}
+    # The test demands exactly these keys and values. Do not change them.
+    return {"status": "active", "model_version": "v1"}
 @app.post("/predict_churn")
 def predict(data: CustomerData):
     try:
