@@ -26,10 +26,15 @@ jobs:
     - name: Generate Test Data
       run: python src/data/make_dataset.py
 
-    # --- NEW STEP: TRAIN THE MODEL ---
-    - name: Train Model (Create the Brain)
+    # --- THE MISSING STEP ---
+    - name: Initialize Feature Store (Feast Apply)
+      run: |
+        cd data/feature_store
+        feast apply
+    # ------------------------
+
+    - name: Train Model
       run: python src/models/train_model.py
-    # ---------------------------------
 
     - name: Run Unit Tests
       run: |
