@@ -6,7 +6,7 @@
 ![Streamlit](https://img.shields.io/badge/Frontend-Streamlit-FF4B4B?style=for-the-badge&logo=streamlit)
 ![Docker](https://img.shields.io/badge/Deployment-Docker-2496ED?style=for-the-badge&logo=docker)
 
-**Project Sentinel** is an end-to-end MLOps system designed to predict customer churn in real-time. Unlike traditional batch models, Sentinel exposes a low-latency API that allows CRM systems to query a customer's risk score instantly and trigger interventions (e.g., dynamic discounts).
+**# Real-Time Customer Retention & Intervention Engine (Project Sentinel)** is an end-to-end MLOps system designed to predict customer churn in real-time. Unlike traditional batch models, Sentinel exposes a low-latency API that allows CRM systems to query a customer's risk score instantly and trigger interventions (e.g., dynamic discounts).
 
 This project demonstrates a complete production lifecycle: form **Feature Engineering** (Feast) to **Model Training** (XGBoost) to **Deployment** (FastAPI & Docker) and **Monitoring** (Streamlit Dashboard).
 

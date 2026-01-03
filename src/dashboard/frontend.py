@@ -8,8 +8,8 @@ import pandas as pd
 st.set_page_config(page_title="Sentinel Churn Predictor", layout="centered")
 
 # Title
-st.title("🛡️ Project Sentinel: Customer Retention Engine")
-st.markdown("Real-time scoring of customer churn risk using XGBoost & FastAPI.")
+st.title("Real-Time Customer Retention & Intervention Engine")
+st.markdown("**Internal Code Name:** Project Sentinel")
 
 # Sidebar for Inputs
 st.sidebar.header("Customer Profile")
