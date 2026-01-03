@@ -1,4 +1,4 @@
-# 🛡️ Project Sentinel: Real-Time Customer Retention Engine
+# 🛡️ Real-Time Customer Retention & Intervention Engine
 
 ![Python](https://img.shields.io/badge/Python-3.10-blue?style=for-the-badge&logo=python)
 ![FastAPI](https://img.shields.io/badge/FastAPI-0.104-009688?style=for-the-badge&logo=fastapi)
